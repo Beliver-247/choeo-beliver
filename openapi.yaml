@@ -1,0 +1,18 @@
+openapi: 3.1.0
+info:
+  title: Test Backend
+  version: 1.0.0
+paths:
+  /get-data:
+    get:
+      summary: Get data message
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
